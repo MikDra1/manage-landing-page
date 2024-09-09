@@ -22,9 +22,15 @@ function App() {
 
   return (
     <>
-      {/* {isLoading ? (
-        <GridLoader color="#f25f3a" loading={isLoading} cssOverride={true}  size={50} className="loader"  />
-      ) : ( */}
+      {isLoading ? (
+        <GridLoader
+          color="#f25f3a"
+          loading={isLoading}
+          cssOverride={true}
+          size={50}
+          className="loader"
+        />
+      ) : (
         <div className="container">
           <div className="bg bg--top"></div>
           <MaangeProvider>
@@ -37,7 +43,7 @@ function App() {
             <Footer />
           </MaangeProvider>
         </div>
-      {/* )} */}
+      )}
     </>
   );
 }
